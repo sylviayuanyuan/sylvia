@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+  margin: 0;
+}
+
+body {
+  min-height: 200vh;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+.font-md {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.font-sm {
+  font-size: 16px;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  height: 66px;
+  background: #5ea7a3;
+  box-shadow: 0px 2px 4px grey;
+  z-index: 550;
+}
+
+.header-height {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 66px;
+}
+
+.burger {
+  display: none;
+  width: 36px;
+  height: 24px;
+  position: absolute;
+  top: 22px;
+  right: 0;
+  cursor: pointer;
+}
+
+.burger1,
+.burger2,
+.burger3 {
+  position: absolute;
+  width: 30px;
+  height: 4px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.burger1 {
+  top: 0;
+  left: 0;
+}
+
+.burger2 {
+  top: 10px;
+  left: 0;
+}
+
+.burger3 {
+  top: 20px;
+  left: 0;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 10%;
+  line-height: 66px;
+  z-index: 550;
+}
+
+.navbar ul {
+  display: flex;
+  padding: 0;
+}
+
+.navbar ul li {
+  display: inline-block;
+  padding: 0 12px;
+  
+}
+
+.navbar ul li:hover {
+  background: #027a76;
+}
+
+.navbar a {
+  color: #f9f9f9;
+  text-decoration:none;
+  display: block;
+  font-size: 16px;
+  font-weight: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+
+.content {
+  width: 100%;
+
+  background-image: linear-gradient(to top, #a8edea 0%, #fef0d6 100%);
+  padding-top: 100px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.KK {
+display: flex;
+padding-bottom: 30px;
+}
+
+.key-txt {
+  padding-top: 6px;
+  padding-left: 30px;
+  color: #536161;
+  display: block;
+  font-size: 14px;
+  font-weight: 0;
+  font-family: "Noto Sans TC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.animateFade {
+  opacity: 0;
+
+  -webkit-animation-name: animateFade;
+  -webkit-animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+  -webkit-animation-delay: 0.5s;
+
+  animation-name: animateFade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+
+}
+
+
+.copyright p {
+  color: #f9f9f9;
+  display: block;
+  font-size: 14px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+  padding-top: 20px;
+  letter-spacing: 2px;
+}
+
+@-webkit-keyframes animateFade{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+@keyframes animateFade{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.title-txt {
+  color: #536161;
+  font-size: 20px;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  padding-left: 16px;
+  position: relative;
+  
+}
+
+.title-txt::before {
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  width: 8px;
+  height: 28px;
+  background-color: #5ea7a3;
+  padding-top: 4px;
+
+}
+
+.detail {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  margin-bottom: 20px;
+  color: #536161;
+  font-family: "Noto Sans TC", sans-serif;
+  font-weight: 300;
+  border-bottom: solid 1px;
+  border-color: #029d98;
+
+}
+
+.badge-secondary {
+  color: #fff;
+  background-color: #6c757d;
+}
+.badge-pill {
+  padding-right: .6em;
+  padding-left: .6em;
+  border-radius: 10rem;
+}
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 350;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  }
+
+.BSS {
+  margin-top: 12px;
+  padding: 2px 8px;
+  background-color: #5ea7a3;
+  color: #f9f9f9;
+  font-weight: 300;
+  letter-spacing: 2px;
+}
+
+.card-outer {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: calc(100% / 3 - 20px);
+  background: #f9f9f9;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px lightgray;
+  overflow: hidden;
+}
+
+.card:hover {
+  cursor: pointer;
+}
+
+.card:hover img {
+  transform: scale(1.2, 1.2);
+}
+
+.card-img {
+  overflow: hidden;
+}
+
+.card-img img {
+  width: 100%;
+  display: block;
+}
+
+.card-text {
+  padding: 12px;
+}
+
+.card a:hover,
+.card a:visited,
+.card a:link,
+.card a:active {
+  text-decoration: none;
+  color:#536161;
+  }
+
+.footer {
+  background-color: #5ea7a3;
+  min-height: 24vh;
+}
+
+.area {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 50px;
+  text-align: center;
+}
+
+
+
+.fa-facebook-f,
+.fa-regular,
+.fa-solid
+ {
+  font-size: 24px;
+  color: #f9f9f9;
+  padding-left: 20px;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .card {
+    width: calc(50% - 20px);
+  }
+  .burger {
+    display: block;
+  }
+  .header {
+    z-index: 550;
+  }
+  .navbar {
+    display: none;
+    right: 0;
+    top: 66px;
+    z-index: 500;
+  }
+  .navbar ul {
+    flex-direction: column;
+    background: #029d98;
+    width: 240px;
+    height: 100vh;
+  }
+  .rwd-open-navbar {
+    display: block;
+  }
+
+
+  .key-txt {
+    padding-left: 10px;
+    font-size: 12px;}
+
+  .PG {
+      width:180px;
+      vertical-align: middle;
+   } 
+
+   h3 {
+    font-size: 30px;
+  }
+
+  .copyright p {
+    font-family: "Noto Sans TC", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    letter-spacing: 0px;
+  }
+
+
+
+
+}
+
+@media screen and (max-width: 480px) {
+  .card {
+    width: calc(100% - 20px);
+  }
+
+  .KK {
+    display: flex;
+    flex-direction: column;
+  }
+  .key-txt {
+    padding-top: 12px;
+    font-size: 11px;}
+
+   .key-v img {
+    margin:auto;
+    display: block;
+
+   }
+
+   .PG {
+    width:160px;
+    vertical-align: middle;
+   } 
+
+   .copyright p {
+    font-family: "Noto Sans TC", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    letter-spacing: 0px;
+  }
+
+}
